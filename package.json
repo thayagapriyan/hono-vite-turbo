@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "Hono app with Vite and Turbo monorepo",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "scripts": {
     "dev": "turbo run dev",

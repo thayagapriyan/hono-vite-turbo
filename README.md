@@ -13,9 +13,13 @@ A modern monorepo setup featuring Hono backend API with TypeScript, Vite, Node.j
 
 ## Project Structure
 
+This monorepo uses a standard layout:
+- **apps/** - Deployable applications (backend API, frontend client)
+- **packages/** - Shared libraries and utilities (currently empty, ready for shared code)
+
 ```
 hono-vite-turbo/
-├── packages/
+├── apps/
 │   ├── backend/          # Hono API server
 │   │   ├── src/
 │   │   │   └── index.ts  # API routes and logic
@@ -29,6 +33,7 @@ hono-vite-turbo/
 │       ├── package.json
 │       ├── tsconfig.json
 │       └── vite.config.ts
+├── packages/             # Shared libraries (empty, ready for use)
 ├── package.json          # Root package with turbo
 ├── pnpm-workspace.yaml
 └── turbo.json
@@ -68,7 +73,7 @@ pnpm build
 ### 4. Run Production Backend
 
 ```bash
-cd packages/backend
+cd apps/backend
 pnpm start
 ```
 
