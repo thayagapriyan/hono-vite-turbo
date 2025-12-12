@@ -1,0 +1,21 @@
+{
+  "name": "hono-vite-turbo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Hono app with Vite and Turbo monorepo",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
