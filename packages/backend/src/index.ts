@@ -26,8 +26,8 @@ const users: User[] = [
 const posts: Post[] = [
   { id: 1, userId: 1, title: 'First Post', content: 'This is my first post!' },
   { id: 2, userId: 1, title: 'Second Post', content: 'Another amazing post' },
-  { id: 3, userId: 2, title: 'Jane\'s Post', content: 'Hello from Jane!' },
-  { id: 4, userId: 3, title: 'Bob\'s Thoughts', content: 'Sharing my thoughts here' },
+  { id: 3, userId: 2, title: "Jane's Post", content: 'Hello from Jane!' },
+  { id: 4, userId: 3, title: "Bob's Thoughts", content: 'Sharing my thoughts here' },
 ]
 
 // Root endpoint
