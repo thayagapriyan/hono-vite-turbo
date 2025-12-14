@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "baseUrl": "./",
+    "paths": {
+      "@hono-vite-turbo/utils": ["packages/utils/src"],
+      "@hono-vite-turbo/utils/*": ["packages/utils/src/*"]
+    }
+  }
+}
