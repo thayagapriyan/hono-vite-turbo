@@ -1,5 +1,6 @@
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
+import { greet } from '@hono-vite-turbo/utils'
 
 const app = new Hono()
 
@@ -33,7 +34,7 @@ const posts: Post[] = [
 // Root endpoint
 app.get('/', (c) => {
   return c.json({
-    message: 'Welcome to Hono API',
+    message: greet('Hono API'),
     endpoints: {
       users: '/api/users',
       posts: '/api/posts',
